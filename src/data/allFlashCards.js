@@ -4,37 +4,37 @@ export const allFlashCards = [
   {
     title: 'JSX',
     description:
-      'JavaScript and XML. Linguagem de marcação que pode ser utilizada para a criação de componentes React de forma mais declarativa. É bem semelhante ao HTML.',
+      'JavaScript and XML. Markup language that can be used to create React components in a more declarative way. It s very similar to HTML..',
   },
   {
     title: 'React',
     description:
-      'Biblioteca criada pelo Facebook para renderização otimizada. Pode ser utilizada em diversas plataformas como web, mobile e Realidade Virtual.',
+      'Library created by Facebook for optimized rendering. It can be used on various platforms such as web, mobile and Virtual Reality.',
   },
   {
-    title: 'Componente React',
+    title: 'React Component',
     description:
-      'Representa código reutilizável pelo React. Em regra, deve começar com letra maiúscula. Pode ser customizável através de props',
+      'Represents code reusable by React. As a rule, it must start with a capital letter. Can be customizable through props',
   },
   {
     title: 'Hooks',
     description:
-      'Estruturas que são acopladas às funções para aumentar o poder de componentes React. Podem permitir a utilização de estado e gerenciamento de efeitos colaterais, por exemplo.',
+      'Structures that are coupled to functions to increase the power of React components. They can allow the use of status and management of side effects, for example.',
   },
   {
     title: 'Function Components',
     description:
-      'Componentes baseados em função. São amplamente utilizados atualmente em detrimento às Class Components, que aos poucos podem se tornar obsoletas.',
+      'Role-based components. They are widely used today in detriment to Class Components, which can gradually become obsolete.',
   },
   {
     title: 'useState',
     description:
-      'Hook nativo do React que permite o gerenciamento de estado da aplicação e de componentes.',
+      'Native React hook that allows application and component state management.',
   },
   {
-    title: 'Estado',
+    title: 'State',
     description:
-      "Também conhecido como 'state'. Pode ser representando por 'dados que mudam com o tempo' e que também podem ser manipulados pelos usuários, geralmente através de formulários, e também por API's, outros componentes, etc.",
+      "Also known as 'state'. It can be represented by 'data that changes over time' and which can also be manipulated by users, usually through forms, and also by API's, other components, etc.",
   },
   {
     title: 'Efeitos colaterais',
@@ -43,12 +43,12 @@ export const allFlashCards = [
   },
   {
     title: 'useEffect',
-    description: 'Hook nativo do React para lidar com efeitos colaterais.',
+    description: 'React Native Hook to Handle Side Effects.',
   },
   {
     title: 'Virtual DOM',
     description:
-      'Estrutura utilizada pelo React para manipulação do DOM em memória. Permite a atualização do DOM real somente onde necessário, o que pode garantir uma melhor performance da aplicação.',
+      'Structure used by React for in-memory DOM manipulation. Allows updating the real DOM only where necessary, which can ensure better application performance.',
   },
 ]
   .map(item => {
@@ -56,4 +56,4 @@ export const allFlashCards = [
   })
   .sort((a, b) => a.title.localeCompare(b.title));
 
-  console.log(allFlashCards)
+console.log(allFlashCards);
