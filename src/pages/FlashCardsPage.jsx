@@ -8,11 +8,20 @@ import { useState } from 'react';
 import { helperShuffleArray } from '../helpers/arrayHelpers';
 
 export default function FlashCardsPage() {
+
+ 
   const [allCards, setAllCards] = useState(allFlashCards);
-  console.log(allCards);
-  function handleButtonClick(allCards) {
+
+  const [_, setState] = useState({});
+  
+  function updateShuffleFlashCards() {
+    setState({});
+  }
+
+  function handleButtonClick() {
     const shuffledCards = helperShuffleArray(allCards);
     setAllCards(shuffledCards);
+    updateShuffleFlashCards()
   }
 
   return (
