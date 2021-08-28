@@ -12,16 +12,9 @@ export default function FlashCardsPage() {
  
   const [allCards, setAllCards] = useState(allFlashCards);
 
-  const [_, setState] = useState({});
-  
-  function updateShuffleFlashCards() {
-    setState({});
-  }
-
   function handleButtonClick() {
     const shuffledCards = helperShuffleArray(allCards);
     setAllCards(shuffledCards);
-    updateShuffleFlashCards()
   }
 
   return (
