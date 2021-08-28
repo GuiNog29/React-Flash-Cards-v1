@@ -1,9 +1,11 @@
-export const helperShuffleArray = array => {
-  for (let i = array.length - 1; i > 0; i--) {
+// Adaptado de: https://stackoverflow.com/a/12646864
+export function helperShuffleArray(array) {
+  const shuffledArray = [...array];
+
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    const temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
   }
-  return array;
+
+  return shuffledArray;
 }
